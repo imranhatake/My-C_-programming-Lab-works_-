@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+    int a = 1, b = 2, c = 3, d = 4;
+    int *arr[2][2] = { {&a, &b}, {&c, &d} };
+
+    printf("%d %d\n", *arr[0][0], *arr[0][1]);
+    printf("%d %d\n", *arr[1][0], *arr[1][1]);
+    return 0;
+}
